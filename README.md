@@ -1,3 +1,3 @@
 # olimex
 
-My olimex stuff
+* My olimex stuff
