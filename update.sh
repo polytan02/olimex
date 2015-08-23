@@ -44,5 +44,13 @@ if [ $majrain == 'y' ];
 	echo -e "$ok Ok, on ne fait rien";
 fi;
 
+echo -e "\n"; read -e -p "$info Mettre à jour z-push_ynh (yn) ? " -i "y" majzpush;
+if [ $majzpush == 'y' ];
+	then echo -e "\n$ok upgrade z-push\n";
+	yunohost app upgrade -u https://github.com/polytan02/z-push_ynh z-push
+	else
+	echo -e "$ok Ok, on ne fait rien";
+fi;
+
 
 echo -e "\n$ok Ok, fini !\n";
